@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    プラグインを 1 つ載せて動かす専用プロセス。メインアプリは、プラグインごとにこれを 1 つ起動する。
+    ビット数はプラグインに合わせて選ぶので、同じプロジェクトを 2 通りに発行する (メインアプリのビルド後):
+      win-x86: framework-dependent (x86 版の .NET ランタイムが必要)     -> PluginHost32\
+      win-x64: framework-dependent (本体と同じランタイムを使う)       -> PluginHost64\
+  -->
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <AssemblyName>VstPluginHost</AssemblyName>
+    <RootNamespace>VstPluginHost</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <!-- 64bit 側は、以前に本体 (WPF) の中で動かしていたときと同じ DPI 設定 (システム DPI 対応) にして、エディタの見た目を変えない -->
+  <PropertyGroup Condition="'$(RuntimeIdentifier)' == 'win-x64'">
+    <ApplicationManifest>app.x64.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VstCore\VstCore.csproj" />
+  </ItemGroup>
+
+</Project>

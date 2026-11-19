@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <RootNamespace>Koromogae</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.11.0" />
+    <PackageReference Include="xunit" Version="2.9.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="3.1.5" />
+  </ItemGroup>
+
+  <!-- WPF 本体 (exe) を参照せず、画面の判断だけを取り出した依存のないファイルを、ソースごと取り込む -->
+  <ItemGroup>
+    <Compile Include="..\..\Ui\*.cs" Link="Linked\Ui\%(Filename)%(Extension)" />
+    <Compile Include="..\..\Localization\Loc.cs" Link="Linked\Loc.cs" />
+    <Compile Include="..\..\Localization\UiLanguage.cs" Link="Linked\UiLanguage.cs" />
+    <!-- 画面の文字列の表 (日本語 + 英語)。リソース名 (Koromogae.Resources.Strings) を本体とそろえるため、RootNamespace を Koromogae にしている -->
+    <EmbeddedResource Include="..\..\Resources\Strings.resx" Link="Resources\Strings.resx" />
+    <EmbeddedResource Include="..\..\Resources\Strings.en.resx" Link="Resources\Strings.en.resx" />
+    <Compile Include="..\..\AppSettings.cs" Link="Linked\AppSettings.cs" />
+    <Compile Include="..\..\AppLog.cs" Link="Linked\AppLog.cs" />
+    <Compile Include="..\..\AppPaths.cs" Link="Linked\AppPaths.cs" />
+    <Compile Include="..\..\Audio\ApiKind.cs" Link="Linked\ApiKind.cs" />
+    <Compile Include="..\..\Audio\FormatChoice.cs" Link="Linked\FormatChoice.cs" />
+    <Compile Include="..\..\Audio\DitherMode.cs" Link="Linked\DitherMode.cs" />
+    <Compile Include="..\..\Audio\RecordDepth.cs" Link="Linked\RecordDepth.cs" />
+    <Compile Include="..\..\Audio\RecordFormat.cs" Link="Linked\RecordFormat.cs" />
+    <Compile Include="..\..\Audio\DiagnosticsInfo.cs" Link="Linked\DiagnosticsInfo.cs" />
+    <Compile Include="..\..\Audio\EngineOptions.cs" Link="Linked\EngineOptions.cs" />
+  </ItemGroup>
+
+</Project>

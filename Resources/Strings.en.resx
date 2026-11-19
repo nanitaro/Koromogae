@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Menu.Help" xml:space="preserve">
+    <value>_Help</value>
+  </data>
+  <data name="Menu.Options" xml:space="preserve">
+    <value>_Options</value>
+  </data>
+  <data name="Menu.MinimizeToTray" xml:space="preserve">
+    <value>Minimize to the system tray</value>
+  </data>
+  <data name="Menu.Language" xml:space="preserve">
+    <value>_Language</value>
+  </data>
+  <data name="Menu.About" xml:space="preserve">
+    <value>_About...</value>
+  </data>
+  <data name="Menu.OpenDataFolder" xml:space="preserve">
+    <value>Open _log and settings folder</value>
+  </data>
+  <data name="Main.Audio.Group" xml:space="preserve">
+    <value>Audio settings</value>
+  </data>
+  <data name="Main.Api.Label" xml:space="preserve">
+    <value>Sound API</value>
+  </data>
+  <data name="Main.SampleRate.Label" xml:space="preserve">
+    <value>Sample rate</value>
+  </data>
+  <data name="Main.InputDevice.Label" xml:space="preserve">
+    <value>Recording device</value>
+  </data>
+  <data name="Main.Buffer.Label" xml:space="preserve">
+    <value>Buffer (ms)</value>
+  </data>
+  <data name="Main.InputFormat.Label" xml:space="preserve">
+    <value>Recording bit depth</value>
+  </data>
+  <data name="Main.Cushion.Label" xml:space="preserve">
+    <value>Internal buffer (ms)</value>
+  </data>
+  <data name="Main.OutputDevice.Label" xml:space="preserve">
+    <value>Playback device</value>
+  </data>
+  <data name="Main.OutputFormat.Label" xml:space="preserve">
+    <value>Playback bit depth</value>
+  </data>
+  <data name="Main.Dither.Label" xml:space="preserve">
+    <value>Dither (Int24/16 only)</value>
+  </data>
+  <data name="Main.Refresh" xml:space="preserve">
+    <value>Refresh devices</value>
+  </data>
+  <data name="Main.Plugins.Group" xml:space="preserve">
+    <value>VST plugins (processed from top to bottom / 32-bit and 64-bit can be mixed)</value>
+  </data>
+  <data name="Main.Plugin.Add" xml:space="preserve">
+    <value>Add...</value>
+  </data>
+  <data name="Main.Plugin.AddBundle" xml:space="preserve">
+    <value>VST3 folder...</value>
+  </data>
+  <data name="Main.Plugin.AddBundle.Tip" xml:space="preserve">
+    <value>Add a folder-style VST3 bundle</value>
+  </data>
+  <data name="Main.Plugin.Remove" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="Main.Plugin.Up" xml:space="preserve">
+    <value>Move up</value>
+  </data>
+  <data name="Main.Plugin.Down" xml:space="preserve">
+    <value>Move down</value>
+  </data>
+  <data name="Main.Plugin.Editor" xml:space="preserve">
+    <value>Open editor</value>
+  </data>
+  <data name="Main.Plugin.Editor.Tip" xml:space="preserve">
+    <value>Plugins without an editor open the parameters window.</value>
+  </data>
+  <data name="Main.Plugin.Params" xml:space="preserve">
+    <value>Parameters...</value>
+  </data>
+  <data name="Main.Plugin.Params.Tip" xml:space="preserve">
+    <value>Generic parameter window</value>
+  </data>
+  <data name="Main.Plugin.Enabled.Tip" xml:space="preserve">
+    <value>Enabled / bypass</value>
+  </data>
+  <data name="Rec.Group" xml:space="preserve">
+    <value>Recording</value>
+  </data>
+  <data name="Rec.Folder.Label" xml:space="preserve">
+    <value>Save folder</value>
+  </data>
+  <data name="Rec.Browse" xml:space="preserve">
+    <value>Browse...</value>
+  </data>
+  <data name="Rec.Depth.Label" xml:space="preserve">
+    <value>File bit depth</value>
+  </data>
+  <data name="Rec.Format.Label" xml:space="preserve">
+    <value>Format</value>
+  </data>
+  <data name="Rec.Options" xml:space="preserve">
+    <value>Compression options...</value>
+  </data>
+  <data name="Rec.Dry" xml:space="preserve">
+    <value>Also record unprocessed audio</value>
+  </data>
+  <data name="Rec.Button" xml:space="preserve">
+    <value>● Record</value>
+  </data>
+  <data name="Rec.Status.Stopped" xml:space="preserve">
+    <value>Stopped</value>
+  </data>
+  <data name="Play.Group" xml:space="preserve">
+    <value>Playback</value>
+  </data>
+  <data name="Play.Start" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="Play.Meter.In" xml:space="preserve">
+    <value>In</value>
+  </data>
+  <data name="Play.Meter.Out" xml:space="preserve">
+    <value>Out</value>
+  </data>
+  <data name="Play.Latency.Initial" xml:space="preserve">
+    <value>Latency: -</value>
+  </data>
+  <data name="Play.Diag.Initial" xml:space="preserve">
+    <value>Dropouts: -</value>
+  </data>
+  <data name="Play.Status.Stopped" xml:space="preserve">
+    <value>Stopped</value>
+  </data>
+  <data name="Tip.InputFormat" xml:space="preserve">
+    <value>Sample format used to open the recording device.&#10;Auto: uses the first one that opens, in the order Float32 → Int32 → Int24 → Int16.&#10;If you pick one: an error occurs when the device cannot be opened in that format.</value>
+  </data>
+  <data name="Tip.Cushion" xml:space="preserve">
+    <value>Extra headroom added to the ring buffer between input and output.&#10;Larger values make dropouts less likely, and add the same amount of latency.&#10;Default: no extra.</value>
+  </data>
+  <data name="Tip.OutputFormat" xml:space="preserve">
+    <value>Sample format used to open the playback device.&#10;Integer formats (Int16/Int24): values are rounded and dither is added when converting.&#10;Auto: uses the first one that opens, in the order Float32 → Int32 → Int24 → Int16.&#10;If you pick one: an error occurs when the device cannot be opened in that format.</value>
+  </data>
+  <data name="Tip.Dither" xml:space="preserve">
+    <value>Noise added before rounding to integer output (Int24/Int16 for playback and for recording).&#10;TPDF: Standard. Turns the rounding error into white noise that does not depend on the signal.&#10;          Recommended if you will edit or master the audio later.&#10;HP-TPDF: Same distribution, with the noise shifted toward high frequencies.&#10;Noise shaping: Reduces noise in the easily audible midrange and moves it to high frequencies (total noise increases).&#10;Off: Rounding only.&#10;Has no effect for Float32 and Int32.</value>
+  </data>
+  <data name="Tip.RecordFolder" xml:space="preserve">
+    <value>Where recording files are saved.&#10;You can paste a path. A folder that does not exist is created when recording starts.&#10;Default: Music\Koromogae</value>
+  </data>
+  <data name="Tip.RecordDepth" xml:space="preserve">
+    <value>Bit depth of the recording file (WAV / FLAC).&#10;Int24 / Int16: rounded, with dither added according to the dither mode.&#10;Float32: no rounding and no dither (the file gets larger). Available for WAV only.</value>
+  </data>
+  <data name="Tip.RecordFormat" xml:space="preserve">
+    <value>File format of the recording.&#10;WAV: uncompressed. Can be saved as Float32 / Int24 / Int16.&#10;FLAC: lossless compression (the sound is exactly the same, about half the size). Int24 / Int16 only; Float32 cannot be saved.</value>
+  </data>
+  <data name="Tip.RecordOptions" xml:space="preserve">
+    <value>Choose the FLAC compression level (0-8).&#10;Not available for WAV. Cannot be changed while recording.</value>
+  </data>
+  <data name="Tip.RecordDry" xml:space="preserve">
+    <value>Also records the unprocessed sound (before the plugins) to a separate file (..._dry.wav / ..._dry.flac).&#10;The processed sound is delayed by the plugin latency (it is not compensated).</value>
+  </data>
+  <data name="Tip.RecordButton" xml:space="preserve">
+    <value>Records the processed sound to a file.&#10;Available only while running (after pressing Start).&#10;Stopping also ends the recording.</value>
+  </data>
+  <data name="Tip.Latency" xml:space="preserve">
+    <value>An estimate of the end-to-end latency.&#10;Input / Output: values reported by PortAudio&#10;Internal buffer: measured average of the buffer between input and output&#10;Plugins: total latency reported by the enabled plugins&#10;Latency inside the device itself (for example USB devices) is not included.</value>
+  </data>
+  <data name="Tip.Diagnostics" xml:space="preserve">
+    <value>Numbers for investigating the cause of dropouts.&#10;Dropouts: how many times the buffer ran empty during playback and the sound went silent (cumulative since start)&#10;Discarded: share of audio discarded in bulk (oldest first) because too much had accumulated (cumulative since start)&#10;Headroom: the headroom secured by the engine (the duration of audio in the most recent input callback)&#10;Device XRUN: number of input/output device overflows/underflows reported by PortAudio (cumulative since start)&#10;The following are shown only when they happen (red):&#10;Callback exceptions: number of exceptions in audio processing (cumulative since start; details in app.log)&#10;Callback has stopped: input/output has not run for 1.5 s or more (disappears when it resumes)&#10;Recording lost: the length filled with silence because writing could not keep up</value>
+  </data>
+  <data name="Main.Cushion.Default" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="Main.Format.Auto" xml:space="preserve">
+    <value>Auto</value>
+  </data>
+  <data name="Dither.Shaped" xml:space="preserve">
+    <value>Noise shaping</value>
+  </data>
+  <data name="Dither.Off" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="Play.Stop" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="Status.NoDevices" xml:space="preserve">
+    <value>No devices found for {0}.</value>
+  </data>
+  <data name="Msg.SelectDevices" xml:space="preserve">
+    <value>Please select a recording device and a playback device.</value>
+  </data>
+  <data name="Status.StartFailed" xml:space="preserve">
+    <value>Failed to start</value>
+  </data>
+  <data name="Plugins.Failed.LoadHeader" xml:space="preserve">
+    <value>Some plugins could not be loaded</value>
+  </data>
+  <data name="Plugins.Failed.AddHeader" xml:space="preserve">
+    <value>Could not add the plugin(s)</value>
+  </data>
+  <data name="Dialog.PickPlugin.Title" xml:space="preserve">
+    <value>Select VST plugins (VST2 / VST3, 32-bit / 64-bit)</value>
+  </data>
+  <data name="Dialog.PickPlugin.Filter" xml:space="preserve">
+    <value>VST plugins (*.dll;*.vst3)|*.dll;*.vst3|VST3 (*.vst3)|*.vst3|VST2 (*.dll)|*.dll|All files|*.*</value>
+  </data>
+  <data name="Dialog.PickBundle.Title" xml:space="preserve">
+    <value>Select VST3 bundles (*.vst3 folders)</value>
+  </data>
+  <data name="Status.LoadingPlugin" xml:space="preserve">
+    <value>Loading: {0}</value>
+  </data>
+  <data name="Status.PluginLoadFailed" xml:space="preserve">
+    <value>Failed to load the plugin</value>
+  </data>
+  <data name="Rec.Error.PathTooLong" xml:space="preserve">
+    <value>The save folder path is too long.</value>
+  </data>
+  <data name="Rec.Error.CannotStart" xml:space="preserve">
+    <value>Cannot start recording:&#10;&#10;{0}&#10;&#10;Save folder: {1}</value>
+  </data>
+  <data name="Rec.Error.Stopped" xml:space="preserve">
+    <value>{0}&#10;&#10;The audio up to that point has been saved:&#10;{1}</value>
+  </data>
+  <data name="Rec.Saved" xml:space="preserve">
+    <value>Saved: {0}</value>
+  </data>
+  <data name="Rec.Saved.Dry" xml:space="preserve">
+    <value> (unprocessed: {0})</value>
+  </data>
+  <data name="Rec.Saved.Dropped" xml:space="preserve">
+    <value>  * {0:F0} ms of audio was lost because writing could not keep up</value>
+  </data>
+  <data name="Rec.ButtonStop" xml:space="preserve">
+    <value>■ Stop recording</value>
+  </data>
+  <data name="Dialog.PickRecordFolder.Title" xml:space="preserve">
+    <value>Select the folder for recordings</value>
+  </data>
+  <data name="Err.OpenFolder" xml:space="preserve">
+    <value>Cannot open the folder:&#10;&#10;{0}&#10;&#10;{1}</value>
+  </data>
+  <data name="Ver.Unknown" xml:space="preserve">
+    <value>unknown</value>
+  </data>
+  <data name="Ver.HostNotFound" xml:space="preserve">
+    <value>{0}: not found</value>
+  </data>
+  <data name="Ver.HostMatch" xml:space="preserve">
+    <value>{0}: {1} (matches the app)</value>
+  </data>
+  <data name="Ver.HostMismatch" xml:space="preserve">
+    <value>{0}: {1} (does not match the app {2}. Please rebuild.)</value>
+  </data>
+  <data name="Ver.X86Need" xml:space="preserve">
+    <value>The x86 .NET {0} runtime is required to use 32-bit plugins</value>
+  </data>
+  <data name="Ver.X86None" xml:space="preserve">
+    <value>x86 .NET: not found ({0})</value>
+  </data>
+  <data name="Ver.X86Ok" xml:space="preserve">
+    <value>x86 .NET: {0} (available)</value>
+  </data>
+  <data name="Ver.X86Wrong" xml:space="preserve">
+    <value>x86 .NET: {0} (no {1}.x found. {2})</value>
+  </data>
+  <data name="Ver.Hosts" xml:space="preserve">
+    <value>Plugin host:</value>
+  </data>
+  <data name="DitherStatus.Auto" xml:space="preserve">
+    <value>△ (depends on the format actually opened)</value>
+  </data>
+  <data name="DitherStatus.Opened" xml:space="preserve">
+    <value> (opened as {0})</value>
+  </data>
+  <data name="DitherStatus.RecNow" xml:space="preserve">
+    <value>○ (recording)</value>
+  </data>
+  <data name="DitherStatus.RecLater" xml:space="preserve">
+    <value>○ (when recording)</value>
+  </data>
+  <data name="DitherStatus.Line" xml:space="preserve">
+    <value>Where dither applies with the current settings: playback {0}, recording {1}</value>
+  </data>
+  <data name="Dither.Label.Off" xml:space="preserve">
+    <value>Dither off</value>
+  </data>
+  <data name="Dither.Label.Tpdf" xml:space="preserve">
+    <value>Dither TPDF</value>
+  </data>
+  <data name="Dither.Label.HpTpdf" xml:space="preserve">
+    <value>Dither HP-TPDF</value>
+  </data>
+  <data name="Dither.Label.Shaped" xml:space="preserve">
+    <value>Dither noise shaping</value>
+  </data>
+  <data name="Rec.Spec.Flac" xml:space="preserve">
+    <value>{0} / FLAC level {1}</value>
+  </data>
+  <data name="Rec.Ready" xml:space="preserve">
+    <value>Ready to record ({0})</value>
+  </data>
+  <data name="Rec.Size.WetDry" xml:space="preserve">
+    <value>Processed {0} / Unprocessed {1}</value>
+  </data>
+  <data name="Rec.LowDisk" xml:space="preserve">
+    <value>  * Disk space is running low</value>
+  </data>
+  <data name="Restore.Missing" xml:space="preserve">
+    <value>{0}: {1} (removed from settings because the file was not found)</value>
+  </data>
+  <data name="Restore.Failed" xml:space="preserve">
+    <value>{0}: {1} (removed from settings after {2} consecutive failures)</value>
+  </data>
+  <data name="Restore.Kept" xml:space="preserve">
+    <value>{0}: {1} (kept in settings: attempt {2}/{3})</value>
+  </data>
+  <data name="Restore.More" xml:space="preserve">
+    <value>...and {0} more</value>
+  </data>
+  <data name="Restore.Body" xml:space="preserve">
+    <value>{0}:&#10;&#10;{1}&#10;&#10;Details: {2}</value>
+  </data>
+  <data name="Restore.Capacity" xml:space="preserve">
+    <value>The maximum number of plugins ({0}) has been reached.</value>
+  </data>
+  <data name="Plugin.HostStopped" xml:space="preserve">
+    <value>  * Plugin host stopped</value>
+  </data>
+  <data name="Diag.Main" xml:space="preserve">
+    <value>Dropouts {0}  /  Discarded {1:F1}%  /  Headroom {2:F0} ms  /  Device XRUN {3}</value>
+  </data>
+  <data name="Diag.HandlerErrors" xml:space="preserve">
+    <value>  /  Callback exceptions {0}</value>
+  </data>
+  <data name="Diag.InputStalled" xml:space="preserve">
+    <value>  /  Input callback has stopped ({0:F1} s)</value>
+  </data>
+  <data name="Diag.OutputStalled" xml:space="preserve">
+    <value>  /  Output callback has stopped ({0:F1} s)</value>
+  </data>
+  <data name="Diag.RecordDropped" xml:space="preserve">
+    <value>  /  Recording lost {0:F0} ms</value>
+  </data>
+  <data name="Latency.Format" xml:space="preserve">
+    <value>Latency about {0} ms  (input {1} + internal buffer {2} + plugins {3} + output {4})</value>
+  </data>
+  <data name="Api.WasapiExclusive" xml:space="preserve">
+    <value>WASAPI exclusive mode</value>
+  </data>
+  <data name="Api.WasapiShared" xml:space="preserve">
+    <value>WASAPI shared mode</value>
+  </data>
+  <data name="Api.KernelStreaming" xml:space="preserve">
+    <value>Kernel streaming (WDM-KS)</value>
+  </data>
+  <data name="Err.Input" xml:space="preserve">
+    <value>input</value>
+  </data>
+  <data name="Err.Output" xml:space="preserve">
+    <value>output</value>
+  </data>
+  <data name="Err.FormatSpecified" xml:space="preserve">
+    <value>, {0} (specified format)</value>
+  </data>
+  <data name="Err.OpenStream" xml:space="preserve">
+    <value>Cannot open the {0} device "{1}" at {2} Hz{3}: {4}</value>
+  </data>
+  <data name="Err.StartStream" xml:space="preserve">
+    <value>Cannot start the stream: {0}</value>
+  </data>
+  <data name="Status.Running" xml:space="preserve">
+    <value>Running: {0} / {1} Hz / input {2}ch {3} → output {4}ch {5} / {6}</value>
+  </data>
+  <data name="Rec.Err.DiskLow" xml:space="preserve">
+    <value>Not enough free space on the destination disk ({0} MB)</value>
+  </data>
+  <data name="Rec.Err.DiskFull" xml:space="preserve">
+    <value>Not enough free space to continue recording ({0} MB available)</value>
+  </data>
+  <data name="Rec.Err.Stopped" xml:space="preserve">
+    <value>Recording was stopped: {0}</value>
+  </data>
+  <data name="Rec.Err.Close" xml:space="preserve">
+    <value>Cannot close the recording file: {0}</value>
+  </data>
+  <data name="About.Title" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="About.TabLicense" xml:space="preserve">
+    <value>License (MIT)</value>
+  </data>
+  <data name="About.TabNotices" xml:space="preserve">
+    <value>Third-party notices</value>
+  </data>
+  <data name="About.Copy" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="About.Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="About.FileNotFound" xml:space="preserve">
+    <value>{0} was not found.&#10;({1})</value>
+  </data>
+  <data name="About.FileReadError" xml:space="preserve">
+    <value>Cannot read {0}: {1}</value>
+  </data>
+  <data name="About.Copied" xml:space="preserve">
+    <value>Copied</value>
+  </data>
+  <data name="About.CopyFailed" xml:space="preserve">
+    <value>Could not copy: {0}</value>
+  </data>
+  <data name="Flac.Title" xml:space="preserve">
+    <value>FLAC compression options</value>
+  </data>
+  <data name="Flac.Level.0" xml:space="preserve">
+    <value>0 (fastest, larger files)</value>
+  </data>
+  <data name="Flac.Level.1" xml:space="preserve">
+    <value>1 (fast)</value>
+  </data>
+  <data name="Flac.Level.2" xml:space="preserve">
+    <value>2 (fast)</value>
+  </data>
+  <data name="Flac.Level.3" xml:space="preserve">
+    <value>3 (uses linear prediction)</value>
+  </data>
+  <data name="Flac.Level.4" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="Flac.Level.5" xml:space="preserve">
+    <value>5 (standard, default)</value>
+  </data>
+  <data name="Flac.Level.6" xml:space="preserve">
+    <value>6 (smaller, slower)</value>
+  </data>
+  <data name="Flac.Level.7" xml:space="preserve">
+    <value>7 (even smaller)</value>
+  </data>
+  <data name="Flac.Level.8" xml:space="preserve">
+    <value>8 (smallest, slowest)</value>
+  </data>
+  <data name="Flac.Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Flac.Note" xml:space="preserve">
+    <value>Higher levels make smaller files but use more CPU while recording.&#10;The sound is exactly the same at every level (lossless compression).</value>
+  </data>
+  <data name="Flac.LevelLabel" xml:space="preserve">
+    <value>Compression level</value>
+  </data>
+  <data name="Params.Title" xml:space="preserve">
+    <value>Parameters</value>
+  </data>
+  <data name="Params.TitleFormat" xml:space="preserve">
+    <value>{0} - Parameters</value>
+  </data>
+  <data name="Params.Presets" xml:space="preserve">
+    <value>Presets</value>
+  </data>
+  <data name="Params.Reload" xml:space="preserve">
+    <value>Reload</value>
+  </data>
+  <data name="Params.Loading" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="Params.None" xml:space="preserve">
+    <value>There are no parameters to adjust.</value>
+  </data>
+  <data name="Params.Count" xml:space="preserve">
+    <value>Parameters: {0}</value>
+  </data>
+  <data name="Params.Error" xml:space="preserve">
+    <value>Cannot get the parameters: {0}</value>
+  </data>
+  <data name="Err.FileNotFound" xml:space="preserve">
+    <value>File not found.</value>
+  </data>
+  <data name="Err.NotPluginDll" xml:space="preserve">
+    <value>Not a 32-bit / 64-bit Windows DLL.</value>
+  </data>
+  <data name="Err.PortAudioInit" xml:space="preserve">
+    <value>Cannot initialize PortAudio: {0}</value>
+  </data>
+  <data name="Settings.Corrected" xml:space="preserve">
+    <value>Some values in the settings file were corrected on load ({0}). Details: {1}</value>
+  </data>
+  <data name="Settings.Unreadable" xml:space="preserve">
+    <value>The settings file could not be loaded ({0}).</value>
+  </data>
+  <data name="Settings.Moved" xml:space="preserve">
+    <value> The original file was moved to {0} and the app started with default settings.</value>
+  </data>
+  <data name="Settings.MoveFailed" xml:space="preserve">
+    <value> Moving the original file aside also failed.</value>
+  </data>
+  <data name="Settings.TooLarge" xml:space="preserve">
+    <value>The file is too large ({0:N0} bytes, limit {1:N0})</value>
+  </data>
+  <data name="Settings.Empty" xml:space="preserve">
+    <value>The file is empty</value>
+  </data>
+  <data name="Paths.Fallback" xml:space="preserve">
+    <value>A "portable" marker was found in the app folder, but that folder is not writable, so settings and logs are saved to {0}.&#10;({1})</value>
+  </data>
+  <data name="Menu.OpenManual" xml:space="preserve">
+    <value>Open _manual</value>
+  </data>
+  <data name="Err.ManualNotFound" xml:space="preserve">
+    <value>The manual was not found in:&#10;&#10;{0}&#10;&#10;Keep manual.ja.html / manual.en.html in the same folder as Koromogae.exe.</value>
+  </data>
+  <data name="Err.OpenManual" xml:space="preserve">
+    <value>Cannot open the manual:&#10;&#10;{0}&#10;&#10;{1}</value>
+  </data>
+  <data name="Tray.Restore" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+  <data name="Tray.Play.Start" xml:space="preserve">
+    <value>Start playback</value>
+  </data>
+  <data name="Tray.Play.Stop" xml:space="preserve">
+    <value>Stop playback</value>
+  </data>
+  <data name="Tray.Rec.Start" xml:space="preserve">
+    <value>Start recording</value>
+  </data>
+  <data name="Tray.Rec.Stop" xml:space="preserve">
+    <value>Stop recording</value>
+  </data>
+  <data name="Tray.Exit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="Tray.Tip.Stopped" xml:space="preserve">
+    <value>Stopped</value>
+  </data>
+  <data name="Tray.Tip.Running" xml:space="preserve">
+    <value>Playing</value>
+  </data>
+  <data name="Tray.Tip.Recording" xml:space="preserve">
+    <value>Recording</value>
+  </data>
+</root>

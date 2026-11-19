@@ -1,0 +1,71 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <!-- トレイのアイコン (NotifyIcon) 用。WPF の型と名前がぶつかるので、WinForms / Drawing の暗黙の using は外し、使う側が別名で参照する -->
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>Resources\App.ico</ApplicationIcon>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>x64</PlatformTarget>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>false</SelfContained>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Using Remove="System.Windows.Forms" />
+    <Using Remove="System.Drawing" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- サブプロジェクトのソースをこのプロジェクトに取り込まない -->
+    <Compile Remove="VstCore\**;VstPluginHost\**;tests\**;tools\**" />
+    <EmbeddedResource Remove="VstCore\**;VstPluginHost\**;tests\**;tools\**" />
+    <None Remove="VstCore\**;VstPluginHost\**;tests\**;tools\**" />
+    <Page Remove="VstCore\**;VstPluginHost\**;tests\**;tools\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- バージョン情報の画面で、アイコンの最大のフレーム (256) を pack URI で読む -->
+    <Resource Include="Resources\App.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="org.k2fsa.portaudio.runtime.win-x64" Version="1.0.6" />
+    <ProjectReference Include="VstCore\VstCore.csproj" />
+  </ItemGroup>
+
+  <!-- プラグインホスト (プラグイン 1 つにつき 1 プロセス) を、ビット数別に出力先へ発行する -->
+  <Target Name="PublishPluginHosts" AfterTargets="Build">
+    <Exec Command="dotnet publish &quot;$(MSBuildProjectDirectory)\VstPluginHost\VstPluginHost.csproj&quot; -c $(Configuration) -r win-x86 --self-contained false -o &quot;$(OutDir)PluginHost32&quot; --nologo -v:q" />
+    <Exec Command="dotnet publish &quot;$(MSBuildProjectDirectory)\VstPluginHost\VstPluginHost.csproj&quot; -c $(Configuration) -r win-x64 --self-contained false -o &quot;$(OutDir)PluginHost64&quot; --nologo -v:q" />
+    <!-- 配布物に添えるライセンス (本体の LICENSE と、同梱物の通知) と、短い説明書 (dist\README*.txt) は、本体の出力先へ -->
+    <Copy SourceFiles="LICENSE;THIRD-PARTY-NOTICES.md;dist\README.txt;dist\README.en.txt" DestinationFolder="$(OutDir)" />
+  </Target>
+
+  <!-- 配布物に添える HTML のマニュアル (画像を埋め込んだ 1 ファイル) を、README から作る。README か画像かツールが変わったときだけ実行する (増分) -->
+  <ItemGroup>
+    <ManualInput Include="README.md;README.en.md;docs\images\**\*.png;tools\ManualBuilder\*.cs;tools\ManualBuilder\*.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Target Name="BuildManuals" AfterTargets="PublishPluginHosts" Inputs="@(ManualInput)" Outputs="$(OutDir)manual.ja.html;$(OutDir)manual.en.html">
+    <Exec Command="dotnet run --project &quot;$(MSBuildProjectDirectory)\tools\ManualBuilder\ManualBuilder.csproj&quot; -- &quot;$(MSBuildProjectDirectory)\README.md&quot; &quot;$(MSBuildProjectDirectory)\$(OutDir)manual.ja.html&quot; ja" />
+    <Exec Command="dotnet run --project &quot;$(MSBuildProjectDirectory)\tools\ManualBuilder\ManualBuilder.csproj&quot; -- &quot;$(MSBuildProjectDirectory)\README.en.md&quot; &quot;$(MSBuildProjectDirectory)\$(OutDir)manual.en.html&quot; en" />
+  </Target>
+
+</Project>

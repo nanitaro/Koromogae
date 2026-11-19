@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Core.HostStartFailed" xml:space="preserve">
+    <value>Cannot start the plugin host process.</value>
+  </data>
+  <data name="Core.X86Hint" xml:space="preserve">
+    <value> The x86 .NET 10 runtime (.NET Runtime 10, x86) must be installed to use 32-bit plugins.</value>
+  </data>
+  <data name="Core.HostExited" xml:space="preserve">
+    <value>The plugin host exited right after starting (exit code {0}).{1}</value>
+  </data>
+  <data name="Core.HostTimeout" xml:space="preserve">
+    <value>Cannot connect to the plugin host (waited 10 seconds).{0}</value>
+  </data>
+  <data name="Core.HostNotFound" xml:space="preserve">
+    <value>Plugin host not found: {0}</value>
+  </data>
+  <data name="Core.Vst.BitnessMismatch" xml:space="preserve">
+    <value>A {1} plugin cannot be loaded directly in this process ({0}).</value>
+  </data>
+  <data name="Core.Vst.DllLoadFailed" xml:space="preserve">
+    <value>Cannot load the DLL: {0}</value>
+  </data>
+  <data name="Core.Vst2.NoEntry" xml:space="preserve">
+    <value>The VST2 entry point (VSTPluginMain) was not found. VST3 is not supported here.</value>
+  </data>
+  <data name="Core.Vst2.Invalid" xml:space="preserve">
+    <value>Not a valid VST2 plugin.</value>
+  </data>
+  <data name="Core.Vst3.NoBinary" xml:space="preserve">
+    <value>No VST3 binary for this process ({0}) was found.</value>
+  </data>
+  <data name="Core.Vst3.NoEntry" xml:space="preserve">
+    <value>The VST3 entry point (GetPluginFactory) was not found.</value>
+  </data>
+  <data name="Core.Vst3.NoFactory" xml:space="preserve">
+    <value>Cannot get the plugin factory.</value>
+  </data>
+  <data name="Core.Vst3.CreateFailed" xml:space="preserve">
+    <value>Cannot create the component (0x{0:X8}).</value>
+  </data>
+  <data name="Core.Vst3.InitFailed" xml:space="preserve">
+    <value>Failed to initialize the component (0x{0:X8}).</value>
+  </data>
+  <data name="Core.Vst3.NoAudioClass" xml:space="preserve">
+    <value>No audio effect class was found.</value>
+  </data>
+  <data name="Core.Vst3.NoProcessor" xml:space="preserve">
+    <value>Cannot get IAudioProcessor.</value>
+  </data>
+  <data name="Core.Vst3.No32bit" xml:space="preserve">
+    <value>This plugin does not support 32-bit float processing.</value>
+  </data>
+  <data name="Core.Editor.WindowFailed" xml:space="preserve">
+    <value>Cannot create the editor window</value>
+  </data>
+  <data name="Core.Thread.Timeout" xml:space="preserve">
+    <value>The plugin thread is not responding.</value>
+  </data>
+  <data name="Core.Presets" xml:space="preserve">
+    <value>&amp;Presets</value>
+  </data>
+  <data name="Core.HostLoadTimeout" xml:space="preserve">
+    <value>The plugin host did not respond while loading and was terminated (waited {0} seconds).</value>
+  </data>
+</root>

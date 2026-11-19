@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <PlatformTarget>x64</PlatformTarget>
+    <!-- UI オートメーションのクライアント (UIAutomationClient) を使うため。本体のコードは参照しない -->
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.11.0" />
+    <PackageReference Include="xunit" Version="2.9.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="3.1.5" />
+    <PackageReference Include="Xunit.SkippableFact" Version="1.5.85" />
+  </ItemGroup>
+
+  <!-- 本体 (Koromogae.exe) を実際に起動して操作する。ビルド順の保証のためだけに参照する -->
+  <ItemGroup>
+    <ProjectReference Include="..\..\Koromogae.csproj" ReferenceOutputAssembly="false" />
+  </ItemGroup>
+
+  <!-- 選択肢の一覧など、期待値を本体と同じ定義から取るため、依存のないファイルだけをソースごと取り込む -->
+  <ItemGroup>
+    <Compile Include="..\..\Localization\Loc.cs" Link="Linked\Loc.cs" />
+    <Compile Include="..\..\Localization\UiLanguage.cs" Link="Linked\UiLanguage.cs" />
+    <Compile Include="..\..\AppSettings.cs" Link="Linked\AppSettings.cs" />
+    <Compile Include="..\..\AppLog.cs" Link="Linked\AppLog.cs" />
+    <Compile Include="..\..\AppPaths.cs" Link="Linked\AppPaths.cs" />
+    <Compile Include="..\..\Audio\ApiKind.cs" Link="Linked\ApiKind.cs" />
+    <Compile Include="..\..\Audio\FormatChoice.cs" Link="Linked\FormatChoice.cs" />
+    <Compile Include="..\..\Audio\DitherMode.cs" Link="Linked\DitherMode.cs" />
+    <Compile Include="..\..\Audio\RecordDepth.cs" Link="Linked\RecordDepth.cs" />
+    <Compile Include="..\..\Audio\RecordFormat.cs" Link="Linked\RecordFormat.cs" />
+  </ItemGroup>
+
+  <!-- 本体の場所を、実行時にテストコードから参照できるようにする -->
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Reflection.AssemblyMetadataAttribute">
+      <_Parameter1>AppExe</_Parameter1>
+      <_Parameter2>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\..\bin\$(Configuration)\net10.0-windows\win-x64\Koromogae.exe'))</_Parameter2>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+</Project>

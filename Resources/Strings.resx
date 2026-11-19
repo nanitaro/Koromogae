@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Menu.Help" xml:space="preserve">
+    <value>ヘルプ(_H)</value>
+  </data>
+  <data name="Menu.Options" xml:space="preserve">
+    <value>オプション(_O)</value>
+  </data>
+  <data name="Menu.MinimizeToTray" xml:space="preserve">
+    <value>最小化時にタスクトレイに格納する</value>
+  </data>
+  <data name="Menu.Language" xml:space="preserve">
+    <value>Language(_L)</value>
+  </data>
+  <data name="Menu.About" xml:space="preserve">
+    <value>バージョン情報(_A)...</value>
+  </data>
+  <data name="Menu.OpenDataFolder" xml:space="preserve">
+    <value>ログ・設定フォルダを開く(_L)</value>
+  </data>
+  <data name="Main.Audio.Group" xml:space="preserve">
+    <value>オーディオ設定</value>
+  </data>
+  <data name="Main.Api.Label" xml:space="preserve">
+    <value>サウンドAPI</value>
+  </data>
+  <data name="Main.SampleRate.Label" xml:space="preserve">
+    <value>サンプルレート</value>
+  </data>
+  <data name="Main.InputDevice.Label" xml:space="preserve">
+    <value>録音デバイス</value>
+  </data>
+  <data name="Main.Buffer.Label" xml:space="preserve">
+    <value>バッファ(ms)</value>
+  </data>
+  <data name="Main.InputFormat.Label" xml:space="preserve">
+    <value>録音のビット深度</value>
+  </data>
+  <data name="Main.Cushion.Label" xml:space="preserve">
+    <value>内部バッファ(ms)</value>
+  </data>
+  <data name="Main.OutputDevice.Label" xml:space="preserve">
+    <value>再生デバイス</value>
+  </data>
+  <data name="Main.OutputFormat.Label" xml:space="preserve">
+    <value>再生のビット深度</value>
+  </data>
+  <data name="Main.Dither.Label" xml:space="preserve">
+    <value>ディザ(Int24/16のみ)</value>
+  </data>
+  <data name="Main.Refresh" xml:space="preserve">
+    <value>デバイス再取得</value>
+  </data>
+  <data name="Main.Plugins.Group" xml:space="preserve">
+    <value>VSTプラグイン (上から順に処理 / 32bit・64bit 混在可)</value>
+  </data>
+  <data name="Main.Plugin.Add" xml:space="preserve">
+    <value>追加...</value>
+  </data>
+  <data name="Main.Plugin.AddBundle" xml:space="preserve">
+    <value>VST3 フォルダ...</value>
+  </data>
+  <data name="Main.Plugin.AddBundle.Tip" xml:space="preserve">
+    <value>フォルダ形式の VST3 バンドルを追加</value>
+  </data>
+  <data name="Main.Plugin.Remove" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="Main.Plugin.Up" xml:space="preserve">
+    <value>上へ</value>
+  </data>
+  <data name="Main.Plugin.Down" xml:space="preserve">
+    <value>下へ</value>
+  </data>
+  <data name="Main.Plugin.Editor" xml:space="preserve">
+    <value>エディタを開く</value>
+  </data>
+  <data name="Main.Plugin.Editor.Tip" xml:space="preserve">
+    <value>エディタがないプラグインはパラメータ画面を開きます</value>
+  </data>
+  <data name="Main.Plugin.Params" xml:space="preserve">
+    <value>パラメータ...</value>
+  </data>
+  <data name="Main.Plugin.Params.Tip" xml:space="preserve">
+    <value>汎用のパラメータ操作画面</value>
+  </data>
+  <data name="Main.Plugin.Enabled.Tip" xml:space="preserve">
+    <value>有効/バイパス</value>
+  </data>
+  <data name="Rec.Group" xml:space="preserve">
+    <value>録音</value>
+  </data>
+  <data name="Rec.Folder.Label" xml:space="preserve">
+    <value>保存先フォルダ</value>
+  </data>
+  <data name="Rec.Browse" xml:space="preserve">
+    <value>参照...</value>
+  </data>
+  <data name="Rec.Depth.Label" xml:space="preserve">
+    <value>保存ファイルのビット深度</value>
+  </data>
+  <data name="Rec.Format.Label" xml:space="preserve">
+    <value>形式</value>
+  </data>
+  <data name="Rec.Options" xml:space="preserve">
+    <value>圧縮オプション...</value>
+  </data>
+  <data name="Rec.Dry" xml:space="preserve">
+    <value>加工前も録音</value>
+  </data>
+  <data name="Rec.Button" xml:space="preserve">
+    <value>● 録音</value>
+  </data>
+  <data name="Rec.Status.Stopped" xml:space="preserve">
+    <value>停止中</value>
+  </data>
+  <data name="Play.Group" xml:space="preserve">
+    <value>再生</value>
+  </data>
+  <data name="Play.Start" xml:space="preserve">
+    <value>開始</value>
+  </data>
+  <data name="Play.Meter.In" xml:space="preserve">
+    <value>入力</value>
+  </data>
+  <data name="Play.Meter.Out" xml:space="preserve">
+    <value>出力</value>
+  </data>
+  <data name="Play.Latency.Initial" xml:space="preserve">
+    <value>遅延: -</value>
+  </data>
+  <data name="Play.Diag.Initial" xml:space="preserve">
+    <value>音飛び: -</value>
+  </data>
+  <data name="Play.Status.Stopped" xml:space="preserve">
+    <value>停止中</value>
+  </data>
+  <data name="Tip.InputFormat" xml:space="preserve">
+    <value>録音デバイスを開くサンプル形式。&#10;自動: Float32 → Int32 → Int24 → Int16 の順に、開けたものを使う。&#10;指定した場合: その形式で開けなければエラーになる。</value>
+  </data>
+  <data name="Tip.Cushion" xml:space="preserve">
+    <value>入力と出力の間のリングバッファの余裕に上乗せする量。&#10;大きいほど音飛びしにくく、同じだけ遅延が増える。&#10;既定: 上乗せなし。</value>
+  </data>
+  <data name="Tip.OutputFormat" xml:space="preserve">
+    <value>再生デバイスを開くサンプル形式。&#10;整数 (Int16/Int24) では、四捨五入し、ディザを加えて変換する。&#10;自動: Float32 → Int32 → Int24 → Int16 の順に、開けたものを使う。&#10;指定した場合: その形式で開けなければエラーになる。</value>
+  </data>
+  <data name="Tip.Dither" xml:space="preserve">
+    <value>整数出力 (再生の Int24/Int16、録音の Int24/Int16) に丸める前に加えるノイズ。&#10;TPDF: 標準。丸め誤差を信号に依存しない白色ノイズにする。&#10;          後で編集・マスタリングをするなら、これがお薦め。&#10;HP-TPDF: 同じ分布でノイズが高域に寄る。&#10;ノイズシェイピング: 聞こえやすい中域のノイズを減らし、高域へ移す (全体のノイズは増える)。&#10;オフ: 四捨五入のみ。&#10;Float32・Int32 では働かない。</value>
+  </data>
+  <data name="Tip.RecordFolder" xml:space="preserve">
+    <value>録音ファイルの保存先。&#10;貼り付けて入力できます。存在しないフォルダは録音を始めるときに作ります。&#10;既定: ミュージック\Koromogae</value>
+  </data>
+  <data name="Tip.RecordDepth" xml:space="preserve">
+    <value>録音ファイル (WAV / FLAC) のビット深度。&#10;Int24 / Int16: 四捨五入し、ディザ方式のディザを加える。&#10;Float32: 丸めもディザもない (ファイルは大きくなる)。WAV のときだけ選べる。</value>
+  </data>
+  <data name="Tip.RecordFormat" xml:space="preserve">
+    <value>録音ファイルの形式。&#10;WAV: 無圧縮。Float32 / Int24 / Int16 で保存できる。&#10;FLAC: 可逆圧縮 (音は完全に元どおり、サイズは約半分)。Int24 / Int16 だけ。Float32 は保存できない。</value>
+  </data>
+  <data name="Tip.RecordOptions" xml:space="preserve">
+    <value>FLAC の圧縮レベル (0〜8) を選びます。&#10;WAV のときは使えません。録音中は変更できません。</value>
+  </data>
+  <data name="Tip.RecordDry" xml:space="preserve">
+    <value>加工前 (プラグインを通す前) の音も、別のファイル (…_dry.wav / …_dry.flac) に録音する。&#10;加工後の音は、プラグインの遅延のぶん遅れる (補正はしない)。</value>
+  </data>
+  <data name="Tip.RecordButton" xml:space="preserve">
+    <value>加工後の音をファイルに録音します。&#10;動作中 (「開始」を押した後) だけ押せます。&#10;「停止」を押すと、録音も終わります。</value>
+  </data>
+  <data name="Tip.Latency" xml:space="preserve">
+    <value>端から端までの遅延の目安です。&#10;入力・出力: PortAudio が報告する値&#10;内部バッファ: 入力と出力の間のバッファの、実測の平均&#10;プラグイン: 有効なプラグインが申告する遅延の合計&#10;USB 機器など、デバイス内部の遅延は含みません。</value>
+  </data>
+  <data name="Tip.Diagnostics" xml:space="preserve">
+    <value>音飛びの原因を調べるための数字です。&#10;音飛び: 再生中にバッファが空になり、無音になった回数(開始からの累計)&#10;捨てた音: 溜まりすぎたため、古い音をまとめて捨てた割合(開始からの累計)&#10;確保した余裕: エンジンが確保している余裕(直前の入力コールバック1回ぶん)&#10;デバイスXRUN: PortAudio が報告した、入出力デバイスのオーバーフロー/アンダーフローの回数(開始からの累計)&#10;以下は、起きたときだけ表示されます(赤):&#10;コールバックの例外: 音声処理の中で例外が起きた回数(開始からの累計。内容は app.log)&#10;コールバックが止まっています: 入力/出力が 1.5 秒以上動いていない(動き出すと消える)&#10;録音の欠落: 書き込みが追いつかず、無音で埋めた長さ</value>
+  </data>
+  <data name="Main.Cushion.Default" xml:space="preserve">
+    <value>既定</value>
+  </data>
+  <data name="Main.Format.Auto" xml:space="preserve">
+    <value>自動</value>
+  </data>
+  <data name="Dither.Shaped" xml:space="preserve">
+    <value>ノイズシェイピング</value>
+  </data>
+  <data name="Dither.Off" xml:space="preserve">
+    <value>オフ</value>
+  </data>
+  <data name="Play.Stop" xml:space="preserve">
+    <value>停止</value>
+  </data>
+  <data name="Status.NoDevices" xml:space="preserve">
+    <value>{0} のデバイスが見つかりません。</value>
+  </data>
+  <data name="Msg.SelectDevices" xml:space="preserve">
+    <value>録音デバイスと再生デバイスを選択してください。</value>
+  </data>
+  <data name="Status.StartFailed" xml:space="preserve">
+    <value>開始に失敗しました</value>
+  </data>
+  <data name="Plugins.Failed.LoadHeader" xml:space="preserve">
+    <value>ロードできなかったプラグインがあります</value>
+  </data>
+  <data name="Plugins.Failed.AddHeader" xml:space="preserve">
+    <value>プラグインを追加できませんでした</value>
+  </data>
+  <data name="Dialog.PickPlugin.Title" xml:space="preserve">
+    <value>VST プラグインを選択 (VST2 / VST3, 32bit / 64bit)</value>
+  </data>
+  <data name="Dialog.PickPlugin.Filter" xml:space="preserve">
+    <value>VST プラグイン (*.dll;*.vst3)|*.dll;*.vst3|VST3 (*.vst3)|*.vst3|VST2 (*.dll)|*.dll|すべてのファイル|*.*</value>
+  </data>
+  <data name="Dialog.PickBundle.Title" xml:space="preserve">
+    <value>VST3 バンドル (*.vst3 フォルダ) を選択</value>
+  </data>
+  <data name="Status.LoadingPlugin" xml:space="preserve">
+    <value>ロード中: {0}</value>
+  </data>
+  <data name="Status.PluginLoadFailed" xml:space="preserve">
+    <value>プラグインのロードに失敗しました</value>
+  </data>
+  <data name="Rec.Error.PathTooLong" xml:space="preserve">
+    <value>保存先が長すぎます</value>
+  </data>
+  <data name="Rec.Error.CannotStart" xml:space="preserve">
+    <value>録音を始められません:&#10;&#10;{0}&#10;&#10;保存先: {1}</value>
+  </data>
+  <data name="Rec.Error.Stopped" xml:space="preserve">
+    <value>{0}&#10;&#10;それまでの音は保存されています:&#10;{1}</value>
+  </data>
+  <data name="Rec.Saved" xml:space="preserve">
+    <value>保存しました: {0}</value>
+  </data>
+  <data name="Rec.Saved.Dry" xml:space="preserve">
+    <value> (加工前: {0})</value>
+  </data>
+  <data name="Rec.Saved.Dropped" xml:space="preserve">
+    <value>  ※書き込みが追いつかず {0:F0} ms ぶん欠落しました</value>
+  </data>
+  <data name="Rec.ButtonStop" xml:space="preserve">
+    <value>■ 録音停止</value>
+  </data>
+  <data name="Dialog.PickRecordFolder.Title" xml:space="preserve">
+    <value>録音ファイルの保存先を選択</value>
+  </data>
+  <data name="Err.OpenFolder" xml:space="preserve">
+    <value>フォルダを開けません:&#10;&#10;{0}&#10;&#10;{1}</value>
+  </data>
+  <data name="Ver.Unknown" xml:space="preserve">
+    <value>不明</value>
+  </data>
+  <data name="Ver.HostNotFound" xml:space="preserve">
+    <value>{0}: 見つかりません</value>
+  </data>
+  <data name="Ver.HostMatch" xml:space="preserve">
+    <value>{0}: {1} (本体と一致)</value>
+  </data>
+  <data name="Ver.HostMismatch" xml:space="preserve">
+    <value>{0}: {1} (本体 {2} と一致しません。ビルドをやり直してください)</value>
+  </data>
+  <data name="Ver.X86Need" xml:space="preserve">
+    <value>32bit プラグインを使うには x86 版の .NET {0} ランタイムが必要です</value>
+  </data>
+  <data name="Ver.X86None" xml:space="preserve">
+    <value>x86 版 .NET: 見つかりません ({0})</value>
+  </data>
+  <data name="Ver.X86Ok" xml:space="preserve">
+    <value>x86 版 .NET: {0} (利用できます)</value>
+  </data>
+  <data name="Ver.X86Wrong" xml:space="preserve">
+    <value>x86 版 .NET: {0} ({1}.x がありません。{2})</value>
+  </data>
+  <data name="Ver.Hosts" xml:space="preserve">
+    <value>プラグインホスト:</value>
+  </data>
+  <data name="DitherStatus.Auto" xml:space="preserve">
+    <value>△(開いた形式で決まります)</value>
+  </data>
+  <data name="DitherStatus.Opened" xml:space="preserve">
+    <value>({0} で開いています)</value>
+  </data>
+  <data name="DitherStatus.RecNow" xml:space="preserve">
+    <value>○(録音中)</value>
+  </data>
+  <data name="DitherStatus.RecLater" xml:space="preserve">
+    <value>○(録音するとき)</value>
+  </data>
+  <data name="DitherStatus.Line" xml:space="preserve">
+    <value>いまの設定でディザが働くのは: 再生 {0}、録音 {1}</value>
+  </data>
+  <data name="Dither.Label.Off" xml:space="preserve">
+    <value>ディザ オフ</value>
+  </data>
+  <data name="Dither.Label.Tpdf" xml:space="preserve">
+    <value>ディザ TPDF</value>
+  </data>
+  <data name="Dither.Label.HpTpdf" xml:space="preserve">
+    <value>ディザ HP-TPDF</value>
+  </data>
+  <data name="Dither.Label.Shaped" xml:space="preserve">
+    <value>ディザ ノイズシェイピング</value>
+  </data>
+  <data name="Rec.Spec.Flac" xml:space="preserve">
+    <value>{0} / FLAC レベル{1}</value>
+  </data>
+  <data name="Rec.Ready" xml:space="preserve">
+    <value>録音できます ({0})</value>
+  </data>
+  <data name="Rec.Size.WetDry" xml:space="preserve">
+    <value>加工後 {0} / 加工前 {1}</value>
+  </data>
+  <data name="Rec.LowDisk" xml:space="preserve">
+    <value>  ※ディスクの空きが少なくなっています</value>
+  </data>
+  <data name="Restore.Missing" xml:space="preserve">
+    <value>{0}: {1} (ファイルが見つからないため設定から削除します)</value>
+  </data>
+  <data name="Restore.Failed" xml:space="preserve">
+    <value>{0}: {1} ({2} 回連続で失敗したため設定から削除します)</value>
+  </data>
+  <data name="Restore.Kept" xml:space="preserve">
+    <value>{0}: {1} (設定には残します: {2}/{3} 回目)</value>
+  </data>
+  <data name="Restore.More" xml:space="preserve">
+    <value>...ほか {0} 件</value>
+  </data>
+  <data name="Restore.Body" xml:space="preserve">
+    <value>{0}:&#10;&#10;{1}&#10;&#10;詳細: {2}</value>
+  </data>
+  <data name="Restore.Capacity" xml:space="preserve">
+    <value>プラグイン数の上限 ({0}) に達しています</value>
+  </data>
+  <data name="Plugin.HostStopped" xml:space="preserve">
+    <value>  ※プラグインホスト停止</value>
+  </data>
+  <data name="Diag.Main" xml:space="preserve">
+    <value>音飛び {0} 回  /  捨てた音 {1:F1}%  /  確保した余裕 {2:F0} ms  /  デバイスXRUN {3} 回</value>
+  </data>
+  <data name="Diag.HandlerErrors" xml:space="preserve">
+    <value>  /  コールバックの例外 {0} 回</value>
+  </data>
+  <data name="Diag.InputStalled" xml:space="preserve">
+    <value>  /  入力のコールバックが止まっています ({0:F1} 秒)</value>
+  </data>
+  <data name="Diag.OutputStalled" xml:space="preserve">
+    <value>  /  出力のコールバックが止まっています ({0:F1} 秒)</value>
+  </data>
+  <data name="Diag.RecordDropped" xml:space="preserve">
+    <value>  /  録音の欠落 {0:F0} ms</value>
+  </data>
+  <data name="Latency.Format" xml:space="preserve">
+    <value>遅延 約 {0} ms  (入力 {1} + 内部バッファ {2} + プラグイン {3} + 出力 {4})</value>
+  </data>
+  <data name="Api.WasapiExclusive" xml:space="preserve">
+    <value>WASAPI 排他モード</value>
+  </data>
+  <data name="Api.WasapiShared" xml:space="preserve">
+    <value>WASAPI 共有モード</value>
+  </data>
+  <data name="Api.KernelStreaming" xml:space="preserve">
+    <value>カーネルストリーミング (WDM-KS)</value>
+  </data>
+  <data name="Err.Input" xml:space="preserve">
+    <value>入力</value>
+  </data>
+  <data name="Err.Output" xml:space="preserve">
+    <value>出力</value>
+  </data>
+  <data name="Err.FormatSpecified" xml:space="preserve">
+    <value>・{0} (指定した形式)</value>
+  </data>
+  <data name="Err.OpenStream" xml:space="preserve">
+    <value>{0}デバイス「{1}」を {2} Hz{3} で開けません: {4}</value>
+  </data>
+  <data name="Err.StartStream" xml:space="preserve">
+    <value>ストリームを開始できません: {0}</value>
+  </data>
+  <data name="Status.Running" xml:space="preserve">
+    <value>動作中: {0} / {1} Hz / 入力 {2}ch {3} → 出力 {4}ch {5} / {6}</value>
+  </data>
+  <data name="Rec.Err.DiskLow" xml:space="preserve">
+    <value>保存先のディスクの空きが足りません ({0} MB)</value>
+  </data>
+  <data name="Rec.Err.DiskFull" xml:space="preserve">
+    <value>ディスクの空きが足りなくなりました ({0} MB)</value>
+  </data>
+  <data name="Rec.Err.Stopped" xml:space="preserve">
+    <value>録音を止めました: {0}</value>
+  </data>
+  <data name="Rec.Err.Close" xml:space="preserve">
+    <value>録音ファイルを閉じられません: {0}</value>
+  </data>
+  <data name="About.Title" xml:space="preserve">
+    <value>バージョン情報</value>
+  </data>
+  <data name="About.TabLicense" xml:space="preserve">
+    <value>ライセンス (MIT)</value>
+  </data>
+  <data name="About.TabNotices" xml:space="preserve">
+    <value>サードパーティの通知</value>
+  </data>
+  <data name="About.Copy" xml:space="preserve">
+    <value>コピー</value>
+  </data>
+  <data name="About.Close" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="About.FileNotFound" xml:space="preserve">
+    <value>{0} が見つかりません。&#10;({1})</value>
+  </data>
+  <data name="About.FileReadError" xml:space="preserve">
+    <value>{0} を読めません: {1}</value>
+  </data>
+  <data name="About.Copied" xml:space="preserve">
+    <value>コピーしました</value>
+  </data>
+  <data name="About.CopyFailed" xml:space="preserve">
+    <value>コピーできませんでした: {0}</value>
+  </data>
+  <data name="Flac.Title" xml:space="preserve">
+    <value>FLAC の圧縮オプション</value>
+  </data>
+  <data name="Flac.Level.0" xml:space="preserve">
+    <value>0 (最も速い・サイズは大きめ)</value>
+  </data>
+  <data name="Flac.Level.1" xml:space="preserve">
+    <value>1 (速い)</value>
+  </data>
+  <data name="Flac.Level.2" xml:space="preserve">
+    <value>2 (速い)</value>
+  </data>
+  <data name="Flac.Level.3" xml:space="preserve">
+    <value>3 (線形予測を使う)</value>
+  </data>
+  <data name="Flac.Level.4" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="Flac.Level.5" xml:space="preserve">
+    <value>5 (標準・既定)</value>
+  </data>
+  <data name="Flac.Level.6" xml:space="preserve">
+    <value>6 (小さい・時間がかかる)</value>
+  </data>
+  <data name="Flac.Level.7" xml:space="preserve">
+    <value>7 (さらに小さい)</value>
+  </data>
+  <data name="Flac.Level.8" xml:space="preserve">
+    <value>8 (最も小さい・最も時間がかかる)</value>
+  </data>
+  <data name="Flac.Cancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="Flac.Note" xml:space="preserve">
+    <value>大きいほどファイルが小さくなりますが、録音中の CPU の負荷が増えます。&#10;音は、どのレベルでも完全に元どおりです (可逆圧縮)。</value>
+  </data>
+  <data name="Flac.LevelLabel" xml:space="preserve">
+    <value>圧縮レベル</value>
+  </data>
+  <data name="Params.Title" xml:space="preserve">
+    <value>パラメータ</value>
+  </data>
+  <data name="Params.TitleFormat" xml:space="preserve">
+    <value>{0} - パラメータ</value>
+  </data>
+  <data name="Params.Presets" xml:space="preserve">
+    <value>プリセット</value>
+  </data>
+  <data name="Params.Reload" xml:space="preserve">
+    <value>再読み込み</value>
+  </data>
+  <data name="Params.Loading" xml:space="preserve">
+    <value>読み込み中...</value>
+  </data>
+  <data name="Params.None" xml:space="preserve">
+    <value>操作できるパラメータがありません。</value>
+  </data>
+  <data name="Params.Count" xml:space="preserve">
+    <value>{0} 個のパラメータ</value>
+  </data>
+  <data name="Params.Error" xml:space="preserve">
+    <value>パラメータを取得できません: {0}</value>
+  </data>
+  <data name="Err.FileNotFound" xml:space="preserve">
+    <value>ファイルが見つかりません。</value>
+  </data>
+  <data name="Err.NotPluginDll" xml:space="preserve">
+    <value>32bit / 64bit の Windows DLL ではありません。</value>
+  </data>
+  <data name="Err.PortAudioInit" xml:space="preserve">
+    <value>PortAudio を初期化できません: {0}</value>
+  </data>
+  <data name="Settings.Corrected" xml:space="preserve">
+    <value>設定ファイルの一部を修正して読み込みました ({0} 件)。詳細: {1}</value>
+  </data>
+  <data name="Settings.Unreadable" xml:space="preserve">
+    <value>設定ファイルを読み込めませんでした ({0})。</value>
+  </data>
+  <data name="Settings.Moved" xml:space="preserve">
+    <value> 元のファイルを {0} に退避し、既定値で起動しました。</value>
+  </data>
+  <data name="Settings.MoveFailed" xml:space="preserve">
+    <value> 元のファイルの退避にも失敗しました。</value>
+  </data>
+  <data name="Settings.TooLarge" xml:space="preserve">
+    <value>ファイルが大きすぎます ({0:N0} バイト、上限 {1:N0})</value>
+  </data>
+  <data name="Settings.Empty" xml:space="preserve">
+    <value>内容が空です</value>
+  </data>
+  <data name="Paths.Fallback" xml:space="preserve">
+    <value>本体のフォルダに「portable」の目印がありますが、そのフォルダに書き込めないため、設定とログは {0} に保存します。&#10;({1})</value>
+  </data>
+  <data name="Menu.OpenManual" xml:space="preserve">
+    <value>マニュアルを開く(_M)</value>
+  </data>
+  <data name="Err.ManualNotFound" xml:space="preserve">
+    <value>マニュアルが見つかりません:&#10;&#10;{0}&#10;&#10;配布物の manual.ja.html / manual.en.html は、Koromogae.exe と同じフォルダに置いてください。</value>
+  </data>
+  <data name="Err.OpenManual" xml:space="preserve">
+    <value>マニュアルを開けません:&#10;&#10;{0}&#10;&#10;{1}</value>
+  </data>
+  <data name="Tray.Restore" xml:space="preserve">
+    <value>元に戻す</value>
+  </data>
+  <data name="Tray.Play.Start" xml:space="preserve">
+    <value>再生を開始</value>
+  </data>
+  <data name="Tray.Play.Stop" xml:space="preserve">
+    <value>再生を停止</value>
+  </data>
+  <data name="Tray.Rec.Start" xml:space="preserve">
+    <value>録音を開始</value>
+  </data>
+  <data name="Tray.Rec.Stop" xml:space="preserve">
+    <value>録音を停止</value>
+  </data>
+  <data name="Tray.Exit" xml:space="preserve">
+    <value>終了</value>
+  </data>
+  <data name="Tray.Tip.Stopped" xml:space="preserve">
+    <value>停止中</value>
+  </data>
+  <data name="Tray.Tip.Running" xml:space="preserve">
+    <value>再生中</value>
+  </data>
+  <data name="Tray.Tip.Recording" xml:space="preserve">
+    <value>録音中</value>
+  </data>
+</root>

@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- ホスト側の COM オブジェクト (internal) を、PluginHost.Tests が、プラグインと同じ関数ポインタ経由で検査する -->
+    <InternalsVisibleTo Include="PluginHost.Tests" />
+  </ItemGroup>
+
+</Project>
+

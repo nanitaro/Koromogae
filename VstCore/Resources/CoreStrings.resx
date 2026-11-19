@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Core.HostStartFailed" xml:space="preserve">
+    <value>プラグインホストプロセスを起動できません。</value>
+  </data>
+  <data name="Core.X86Hint" xml:space="preserve">
+    <value> 32bit プラグインには x86 版の .NET 10 ランタイム (.NET Runtime 10 の x86) のインストールが必要です。</value>
+  </data>
+  <data name="Core.HostExited" xml:space="preserve">
+    <value>プラグインホストが起動直後に終了しました (終了コード {0})。{1}</value>
+  </data>
+  <data name="Core.HostTimeout" xml:space="preserve">
+    <value>プラグインホストに接続できません (10 秒待ちました)。{0}</value>
+  </data>
+  <data name="Core.HostNotFound" xml:space="preserve">
+    <value>プラグインホストが見つかりません: {0}</value>
+  </data>
+  <data name="Core.Vst.BitnessMismatch" xml:space="preserve">
+    <value>このプロセス({0})では {1} のプラグインを直接ロードできません。</value>
+  </data>
+  <data name="Core.Vst.DllLoadFailed" xml:space="preserve">
+    <value>DLL をロードできません: {0}</value>
+  </data>
+  <data name="Core.Vst2.NoEntry" xml:space="preserve">
+    <value>VST2 のエントリポイント (VSTPluginMain) が見つかりません。VST3 には対応していません。</value>
+  </data>
+  <data name="Core.Vst2.Invalid" xml:space="preserve">
+    <value>有効な VST2 プラグインではありません。</value>
+  </data>
+  <data name="Core.Vst3.NoBinary" xml:space="preserve">
+    <value>このプロセス({0})用の VST3 バイナリが見つかりません。</value>
+  </data>
+  <data name="Core.Vst3.NoEntry" xml:space="preserve">
+    <value>VST3 のエントリポイント (GetPluginFactory) が見つかりません。</value>
+  </data>
+  <data name="Core.Vst3.NoFactory" xml:space="preserve">
+    <value>プラグインファクトリを取得できません。</value>
+  </data>
+  <data name="Core.Vst3.CreateFailed" xml:space="preserve">
+    <value>コンポーネントを生成できません (0x{0:X8})。</value>
+  </data>
+  <data name="Core.Vst3.InitFailed" xml:space="preserve">
+    <value>コンポーネントの初期化に失敗しました (0x{0:X8})。</value>
+  </data>
+  <data name="Core.Vst3.NoAudioClass" xml:space="preserve">
+    <value>オーディオエフェクトのクラスが見つかりません。</value>
+  </data>
+  <data name="Core.Vst3.NoProcessor" xml:space="preserve">
+    <value>IAudioProcessor を取得できません。</value>
+  </data>
+  <data name="Core.Vst3.No32bit" xml:space="preserve">
+    <value>32bit float 処理に対応していないプラグインです。</value>
+  </data>
+  <data name="Core.Editor.WindowFailed" xml:space="preserve">
+    <value>エディタのウィンドウを作れません</value>
+  </data>
+  <data name="Core.Thread.Timeout" xml:space="preserve">
+    <value>プラグインスレッドが応答しません。</value>
+  </data>
+  <data name="Core.Presets" xml:space="preserve">
+    <value>プリセット(&amp;P)</value>
+  </data>
+  <data name="Core.HostLoadTimeout" xml:space="preserve">
+    <value>プラグインホストがロードに応答しないため、強制終了しました ({0} 秒待ちました)。</value>
+  </data>
+</root>

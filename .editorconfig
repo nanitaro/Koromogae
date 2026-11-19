@@ -1,0 +1,7 @@
+# 文字コードと改行の統一 (UTF-8 BOM + CRLF)
+root = true
+
+[*.{cs,xaml,csproj,slnx,md,manifest,props,targets,config}]
+charset = utf-8-bom
+end_of_line = crlf
+insert_final_newline = true

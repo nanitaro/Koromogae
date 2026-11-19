@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/tests/">
+    <Project Path="tests/App.Tests/App.Tests.csproj" />
+    <Project Path="tests/Audio.Tests/Audio.Tests.csproj" />
+    <Project Path="tests/FakeHost/FakeHost.csproj" />
+    <Project Path="tests/PluginHost.Tests/PluginHost.Tests.csproj" />
+    <Project Path="tests/Settings.Tests/Settings.Tests.csproj" />
+    <Project Path="tests/Ui.Tests/Ui.Tests.csproj" />
+  </Folder>
+  <Project Path="VstCore/VstCore.csproj" />
+  <Project Path="Koromogae.csproj" />
+</Solution>

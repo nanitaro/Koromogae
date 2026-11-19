@@ -1,0 +1,19 @@
+﻿<Project>
+
+  <!--
+    すべてのプロジェクト (本体・VstCore・プラグインホスト・テスト) に共通の版番号と製品名。
+    版を上げるときは、この Version の 1 行だけを直す (実行ファイルのプロパティ・バージョン情報の画面・起動ログに出る)。
+  -->
+  <PropertyGroup>
+    <Version>0.5.0</Version>
+    <Product>Koromogae</Product>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+  </PropertyGroup>
+
+  <!-- リリースビルドは pdb を生成しない (配布物に入れない)。Debug は既定のまま -->
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+  </PropertyGroup>
+
+</Project>
